@@ -85,7 +85,7 @@ namespace BokhandelLab2
               while (true)
                 {
                   Console.Clear();
-                    Console.WriteLine("=== Bokhandel (Lab 2, G) ===");
+                    Console.WriteLine("Abdul Bokhandel");
                    Console.WriteLine("1. Visa lagersaldo");
                   Console.WriteLine("2. Lägg till bok i butik");
                     Console.WriteLine("3. Ta bort bok från butik");
@@ -155,7 +155,7 @@ namespace BokhandelLab2
         static void ShowInventory(BokhandelDbContext db)
         {
             Console.Clear();
-            Console.WriteLine("=== Lagersaldo per butik ===");
+            Console.WriteLine("Lagersaldo per butik");
 
             var saldon =
                 from ls in db.Lagersaldo
@@ -192,7 +192,7 @@ namespace BokhandelLab2
         static void AddBookToStore(BokhandelDbContext db)
         {
             Console.Clear();
-            Console.WriteLine("=== Lägg till bok i butik ===");
+            Console.WriteLine("Lägg till bok i butik");
 
             ListStores(db);
             int butikId = ReadInt("Ange ButikID: ");
@@ -247,7 +247,7 @@ namespace BokhandelLab2
         static void RemoveBookFromStore(BokhandelDbContext db)
         {
             Console.Clear();
-            Console.WriteLine("=== Ta bort bok från butik ===");
+            Console.WriteLine("Ta bort bok från butik");
 
             ListStores(db);
             int butikId = ReadInt("Ange ButikID: ");
